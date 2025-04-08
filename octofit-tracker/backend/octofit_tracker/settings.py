@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'tracker_app',
     'corsheaders',
     'octofit_tracker',
+    'djongo',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,6 @@ STATIC_URL = '/static/'
 
 # Enable CORS for all origins
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Add DEFAULT_AUTO_FIELD to avoid warnings about auto-created primary keys
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
