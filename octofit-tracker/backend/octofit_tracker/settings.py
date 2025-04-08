@@ -25,7 +25,7 @@ SECRET_KEY = 'h%f*!pibe7-b6e&7gfjn^i$g$i_rzw%()-##h-+25*wtr#hwlk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'obscure-sniffle-6957rw76v6q245rv-8000.app.github.dev']
 
 
 # Application definition
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tracker_app',
     'corsheaders',
     'octofit_tracker',
     'djongo',
