@@ -130,3 +130,10 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 # Add DEFAULT_AUTO_FIELD to avoid warnings about auto-created primary keys
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Disable the Django REST framework browsable API
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
+}
