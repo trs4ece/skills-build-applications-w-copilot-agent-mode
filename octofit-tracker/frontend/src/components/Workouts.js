@@ -4,7 +4,7 @@ const Workouts = () => {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://obscure-sniffle-6957rw76v6q245rv-8000.app.github.dev/api/workouts')
+    fetch('https://obscure-sniffle-6957rw76v6q245rv-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);

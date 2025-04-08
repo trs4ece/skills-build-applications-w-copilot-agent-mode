@@ -4,7 +4,7 @@ const Activities = () => {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://obscure-sniffle-6957rw76v6q245rv-8000.app.github.dev/api/activities')
+    fetch('https://obscure-sniffle-6957rw76v6q245rv-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);
