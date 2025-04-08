@@ -1,0 +1,1 @@
+print('DEBUG: octofit_tracker app is being loaded')
